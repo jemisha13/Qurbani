@@ -1,0 +1,150 @@
+.charitys-content{
+    .charity-section{
+        .charity-heading{
+            h4{
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 30px;
+                color: #46454E;
+                margin: 0;
+            }
+        }
+        .seacrch-bar{
+            padding: 30px 0;
+            .form-group{
+                margin: 0;
+                position: relative;
+                .control-form{
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 100%;
+                    padding: 10px 10px 10px 20px;
+                    border-radius: 30px;
+                    background: transparent;
+                    border: 1px solid #36CC7C;
+                    box-shadow: 0px 1px 9px -6px rgba(0,0,0,0.49);
+                    -webkit-box-shadow: 0px 1px 9px -6px rgba(0,0,0,0.49);
+                    -moz-box-shadow: 0px 1px 9px -6px rgba(0,0,0,0.49);
+                }
+                ::placeholder {
+                    color: #9E9E9E;
+                    opacity: 1; /* Firefox */
+                  }
+                  
+                  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                   color: #9E9E9E;
+                  }
+                  
+                  ::-ms-input-placeholder { /* Microsoft Edge */
+                   color: #9E9E9E;
+                  }
+                  span{
+                      display: none;
+                      position: absolute;
+                      top: 10px;
+                      left: 20px;
+                      font-size: 20px;
+                      color: #9E9E9E;
+                  }
+            }
+           
+            
+        }
+        .charity-boxs{
+            .charity-box{
+                background: #C6E9F9;
+                opacity: 1;
+                padding: 15px 10px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.49);
+                -webkit-box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.49);
+                -moz-box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.49);
+                .image{
+                    border-radius: 50%;
+                    width: 76px;
+                    height: 76px;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                   
+                }
+                .charity{
+                    img{
+                        width: 50px;
+                    }
+                }
+                .charity-content{
+                    label{
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 600;
+                        color: #46454E;
+                    }
+                    .givers-process{
+                        
+                        .dotation-price{
+                            padding-top: 10px;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #228765;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .charitys-content{
+        .charity-section{
+            .charity-heading{
+                h4{
+                    font-size: 35px;
+                    font-weight: 600;
+                }
+            }
+            .seacrch-bar{
+                .form-group{
+                    position: relative;
+                    .control-form{
+                        padding: 10px 10px 10px 50px;
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+            }
+            .charity-boxs{
+                .charity-box{
+                    padding: 20px;
+                    .image{
+                        width: 162px;
+                        height: 162px;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                    .charity-content{
+                        padding-left: 20px;
+                        label{
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+                        .givers-process{
+                            .progress{
+                                height: 20px;
+                            }
+                            .dotation-price{
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

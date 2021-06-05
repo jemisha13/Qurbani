@@ -1,0 +1,28 @@
+.powered-container {
+    background-color: #228765;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    p {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        margin-bottom: 0;
+        a {
+            color: #ffffff;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .powered-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.mobile-slider {
+    padding-top: 0px;
+    .slide-inner {
+        overflow: hidden;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        min-height: 230px;
+        .slide-content {
+            padding: 0px;
+            position: relative;
+            z-index: 1;
+            .slide-image{
+                display: inline-block;
+                width: 86px;
+                height: 86px;
+                margin-bottom: 10px;
+                span{
+                    display: flex;
+                    width: 86px;
+                    height: 86px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            
+            p {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+           .slider-button{
+                background: #FFFFFF;
+                border-radius: 30px;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 5px 15px;
+                margin-top: 15px;
+                width: 145px;
+                border: 1px solid transparent;
+                box-shadow: 0px 3px 6px #00000029;
+                &:hover{
+                    background: transparent;
+                    border: 1px solid #ffffff;
+                }
+
+           }
+        }
+        #get-started{
+            .slider-button{
+                color: #E6D031;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        #check-livestock{
+            .slider-button{
+                color: #36CC7C;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        #give-now{
+            .slider-button{
+                color: #EF716D;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+.desktop-slider {
+    padding-top: 0px;
+    width: 60%;
+    .slide-inner {
+        overflow: hidden;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        min-height: 240px;
+        width: 33.33%;
+        .slide-content {
+            padding: 0px;
+            position: relative;
+            z-index: 1;
+            .slide-image{
+                display: inline-block;
+                width: 86px;
+                height: 86px;
+                margin-bottom: 10px;
+                span{
+                    display: flex;
+                    width: 86px;
+                    height: 86px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            
+            p {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+           .slider-button{
+                background: #FFFFFF;
+                border-radius: 30px;
+                font-size: 16px;
+                line-height: 22px;
+                padding: 5px 15px;
+                margin-top: 15px;
+                border: 2px solid transparent;
+                width: 160px;
+                box-shadow: 0px 3px 6px #00000029;
+                &:hover{
+                    background: transparent;
+                    color: #ffffff;
+                    border: 2px solid #ffffff;
+                }
+
+           }
+        }
+        #get-started{
+            .slider-button{
+                color: #E6D031;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        #check-livestock{
+            .slider-button{
+                color: #36CC7C;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        #give-now{
+            .slider-button{
+                color: #EF716D;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+

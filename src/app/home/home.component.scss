@@ -1,0 +1,324 @@
+.home-content{
+    .countries-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        .countries-boxs{
+            .countrie-box{
+                text-align: center;
+                width: 33.33%;
+                .box{
+                    background: #EF716D;
+                    border-radius: 50%;
+                    height: 98px;
+                    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+                    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+                    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+                    span{
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 40px;
+                        color: #FFFFFF;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    color: #46454E;
+                    margin: 5px 0 0 0; 
+                }
+            }
+        }
+    }
+    .charity-section{
+        .charity-inner{
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            .heading{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 32px;
+                color: #46454E;
+                padding-bottom: 25px;
+            }
+            .charity-main{
+                width: 50%;
+                margin-bottom: 10px;
+                .charity{
+                    border-radius: 50%;
+                    height: 150px;
+                    padding: 25px 10px;
+                    position: relative;
+                    cursor: pointer;
+                    .check{
+                        background-color: #FFFFFF;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        border-width: 3px;
+                        border-style: solid;
+                        border-color: transparent;
+                        color: #228765;
+                        font-size: 16px;
+                        line-height: 36px;
+                        text-align: center;
+                        position: absolute;
+                        top: -12px;
+                        left: 57%;
+                        opacity: 0;
+                    }
+                    img{
+                        max-height: 80px;
+                    }
+                    .image{
+                        display: block;
+                    }
+                    .image-hover{
+                        display: none;
+                    }
+                    &.active{
+                        .image{
+                            display: none;
+                        }
+                        .image-hover{
+                            display: block;
+                        } 
+                        .check{
+                            opacity: 1;
+                        }
+                    }
+                    &:hover{
+                        .image{
+                            display: none;
+                        }
+                        .image-hover{
+                            display: block;
+                        } 
+                        .check{
+                            opacity: 1;
+                        }
+                    }
+                }
+                #human-appeal{
+                    background-color: #7332AA;
+                    border: 3px solid #7332AA;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #7332AA;
+                        }
+                    }
+                    &.active{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #7332AA;
+                        }
+                    }
+                }
+                #islamic-help{
+                    background-color: #DF3144;
+                    border: 3px solid #DF3144;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #DF3144;
+                        }
+                    }
+                    &.active{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #DF3144;
+                        }
+                    }
+                }
+                #grt{
+                    background-color: #299AC3;
+                    border: 3px solid #299AC3;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #299AC3;
+                        }
+                    }
+                    &.active{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #299AC3;
+                        }
+                    }
+                }
+                #muslim{
+                    background-color: #93C23E;
+                    border: 3px solid #93C23E;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #93C23E;
+                        }
+                    }
+                    &.active{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #93C23E;
+                        }
+                    }
+                }
+                #skt-welfare{
+                    background-color: #E22929;
+                    border: 3px solid #E22929;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #E22929;
+                        }
+                    }
+                    &.active{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #E22929;
+                        }
+                    }
+                }
+                #ummah{
+                    background-color: #110E79;
+                    border: 3px solid #110E79;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #110E79;
+                        }
+                    }
+                    &.active{
+                        background-color: #FFFFFF;
+                        .check{
+                            border-color: #110E79;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .charities-btn{
+        .charities-btn-inner{
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            .btn-success{
+                background: #36CC7C;
+                border-radius: 30px;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #FFFFFF;
+                border: none;
+                padding: 15px 20px;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 15px;
+                &:focus{
+                    box-shadow: none;
+                }
+                span{
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    float: right;
+                }
+            }
+            .btn-danger{
+                background: #EF716D;
+                border-radius: 30px;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #FFFFFF;
+                border: none;
+                padding: 15px 20px;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 15px;
+                &:focus{
+                    box-shadow: none;
+                }
+                span{
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    float: right;
+                }
+            }
+        }
+    }
+    .accordion-inner{
+        width: 100%;
+        text-align: left;
+    }
+}
+@media (min-width: 992px) {
+    .home-content{
+        .countries-container{
+            width: 50%;
+            .countries-boxs{
+                .countrie-box{
+                    .box{
+                        height: 175px;
+                        span{
+                            font-size: 58px;
+                        }
+                    }
+                    p{
+                        font-size: 32px;
+                        line-height: 40px;
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        
+        .charity-section{
+            .charity-inner{
+                width: 60%;
+                .heading{
+                    font-size: 44px;
+                    line-height: 48px;
+                    padding-bottom: 50px;
+                }
+                .charity-main{
+                    width: 33.33%;
+                    margin-bottom: 20px;
+                    .charity{
+                        height: 240px;
+                        img{
+                            max-height: 140px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .charities-btn{
+            .charities-btn-inner{
+                width: 40%;
+                .btn-success{
+                    font-size: 24px;
+                    line-height: 26px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+                .btn-danger{
+                    font-size: 24px;
+                    line-height: 26px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        
+        .accordion-inner{
+            width: 60%;
+        }
+    }
+}

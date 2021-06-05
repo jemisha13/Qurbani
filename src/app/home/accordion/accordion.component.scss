@@ -1,0 +1,118 @@
+.home-accordion {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    .card {
+        border: none;
+        border-radius: 0px;
+        background: none;
+        .card-header {
+            padding: 0px;
+            border-bottom: none;
+            background-color: transparent;
+            .btn {
+                padding: 0 0 20px 0;
+                display: block;
+                color: #333333;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 700;
+                width: 100%;
+                position: relative;
+                &:focus {
+                    text-decoration: none;
+                    box-shadow: none;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+                &::before {
+                    position: absolute;
+                    right: 0;
+                    top: 0px;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background-color: #36CC7C;
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    content: "\f068";
+                    font-family: "Font Awesome 5 Free";
+                }
+                &.collapsed {
+                    &::before {
+                        position: absolute;
+                        right: 0;
+                        top: 0px;
+                        width: 36px;
+                        height: 36px;
+                        line-height: 36px;
+                        border-radius: 50%;
+                        text-align: center;
+                        background-color: #46454E;
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 600;
+                        content: "\f067";
+                        font-family: "Font Awesome 5 Free";
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 0;
+            strong {
+                display: block;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 700;
+                color: #36CC7C;
+                padding-bottom: 5px;
+            }
+            p {
+                display: block;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #000000;
+                &.phone-email {
+                    strong {
+                        color: #58595B;
+                        span {
+                            display: inline-block;
+                            padding-right: 5px;
+                            padding-top: 1px;
+                            font-size: 14px;
+                            vertical-align: top;
+                        }
+                        a {
+                            color: #58595B;
+                        }
+                    }
+                }
+            }
+            .form-group {
+                position: relative;
+                margin-bottom: 20px;
+                .form-control {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-radius: 30px;
+                    border-color: #4D4D4D;
+                    color: #999999;
+                    font-size: 18px;
+                    height: 50px;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &.textarea {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

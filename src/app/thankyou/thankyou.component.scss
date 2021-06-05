@@ -1,0 +1,123 @@
+.thankyou-content{
+    .thankyou-section{
+        .heading{
+            font-size: 50px;
+            line-height: 46px;
+            font-weight: 700;
+            color: #EF716D;
+        }
+        
+        .qurbani-donation{
+            .donation-section{
+                .donation-content{
+                    p{
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #000000;
+                        margin: 0;
+                    }
+                }
+                .islamice-relief{
+                    .donation-box{
+                        p{
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 20px;
+                            color: #000000;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .ibrahim{
+            background: #EF716D;
+            .patient-text{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+        }
+        .qurbani-share{
+            background: #FFFFFF;
+            .heading{
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 500;
+                color: #46454E;
+            }
+            .social-icon{
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 15px;
+                        font-size: 60px;
+                        color: #2FDF53;
+                    }
+                    .last{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    .thankyou-content{
+        .thankyou-section{
+            .heading{
+                font-size: 100px;
+                line-height: 115px;
+            }
+            .qurbani-donation{
+                .donation-section{
+                    .donation-content{
+                        p{
+                            font-size: 22px;
+                            line-height: 32px;
+                        }
+                    }
+                    .islamice-relief{
+                        .donation-box{
+                            p{
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: 700;
+                                margin: 15px 0 0 0;
+                            }
+                        }
+                    }
+                }
+                .ibrahim{
+                    .patient-text{
+                        font-size: 25px;
+                        line-height: 33px;
+                    }
+                }
+                .qurbani-share{
+                    .heading {
+                        width: 40%;
+                        margin: 0 auto;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 40px;
+                    }
+                    .social-icon{
+                        ul{
+                            li{
+                                font-size: 110px;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

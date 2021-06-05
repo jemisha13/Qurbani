@@ -1,0 +1,57 @@
+<div class="d-block pt-4 pt-md-5 animaltab-section">
+    <div class="mx-auto animal-inner mx-md-auto text-center">
+        <div class="animal-heading text-center pb-4 pb-md-5">Select an animal</div>
+        <div class="d-flex flex-wrap align-self-center justify-content-center">
+            <div *ngFor="let item of animalItem; let i = index" class="d-flex mx-2 animal-box"
+                [ngClass]="{active : selectedanimalItem === i}" (click)="selectedanimalItem=i">
+                <div class="d-flex flex-wrap align-self-center justify-content-center w-100">
+                    <img src={{item.image}} alt="" class="image" width="100" height="60" />
+                    <p>{{item.name}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="animal-country pt-2 pt-md-5">
+            <div class="container">
+                <div class="row">
+                    <div *ngFor="let item of countryItem; let i = index" class="col-12">
+                        <div class="country-box" [ngClass]="{active : selectecountryItem === i}" (click)="selectecountryItem=i">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-4 col-md-3">
+                                    <div class="image">
+                                        <div class="added">
+                                            <i class="fa fa-close"></i>
+                                        </div>
+                                        <img src={{item.image}} alt="" class="image" />
+                                    </div>
+                                </div>
+                                <div class="col-8 col-md-9">
+                                    <div class="animal-content">
+                                        <div class="animal-text">
+                                            <p>{{item.name}}</p>
+                                            <span>{{item.shares}}</span>
+                                            <span>{{item.size}}</span>
+                                            <span>{{item.basket}}</span>
+                                        </div>
+                                        <div class="price">
+                                            <label>£{{item.price}}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animal-btn py-3 py-md-4">
+                    <a class="btn btn-danger">Checkout <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-banner">
+        <img src="./assets/images/footer-banner4.png" alt="" />
+    </div>
+    <app-footer></app-footer>
+</div>

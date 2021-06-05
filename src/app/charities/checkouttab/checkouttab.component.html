@@ -1,0 +1,152 @@
+<div class="d-block pt-4 pt-md-5 donation-section">
+    <div class="d-block text-center heading">Confirm your donation</div>
+    <div class="mx-auto charity-inner">
+        <div class="d-block basket-container">
+            <div class="d-block text-center heading">Your Basket</div>
+            <div class="d-block basket-boxs">
+                <div class="d-flex align-items-center justify-content-start basket-box">
+                    <div class="d-inline-block image">
+                        <img src="./assets/images/india-flag.png" alt="">
+                    </div>
+                    <div class="d-inline-block name">
+                        <span>India</span>
+                        <p>Small</p>
+                    </div>
+                    <div class="d-flex flex-wrap price-qty">
+                        <div class="d-block w-100 text-center price">£110.00</div>
+                        <div class="d-flex align-items-center justify-content-between w-100 qty-box">
+                            <button class="btn">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <input type="text" placeholder="1" class="form-control qty-input" />
+                            <button class="btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-start basket-box">
+                    <div class="d-inline-block image">
+                        <img src="./assets/images/pakistan-flag.png" alt="">
+                    </div>
+                    <div class="d-inline-block name">
+                        <span>Pakistan</span>
+                        <p>Large</p>
+                    </div>
+                    <div class="d-flex flex-wrap price-qty">
+                        <div class="d-block w-100 text-center price">£110.00</div>
+                        <div class="d-flex align-items-center justify-content-between w-100 qty-box">
+                            <button class="btn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="text" placeholder="1" class="form-control qty-input" />
+                            <button class="btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-block add-names-container">
+
+            <div class="d-flex align-items-center justify-content-between add-names-box" (click)="selectedItem=0">
+                <div class="users-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="names">
+                    <span>Add names to shares</span>
+                    <p>This step is totally optional, it’s the intention that counts!</p>
+                </div>
+                <div class="plus-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+
+            <div class="add-name" [ngClass]="{active : selectedItem === 0}">
+                <div class="d-flex align-items-center justify-content-between add">
+                    <div class="d-flex align-items-center justify-content-between user-box">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Add a name" class="form-control" />
+                    </div>
+                    <div class="icon plus-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between add">
+                    <div class="d-flex align-items-center justify-content-between user-box">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Adam Ali Shaan" class="form-control" />
+                    </div>
+                    <div class="icon check-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-block">
+            <app-checkoutaccordion></app-checkoutaccordion>
+        </div>
+    </div>
+    <div class="d-block w-100 py-4 py-md-5 order-summary-container">
+        <div class="mx-auto order-summary-inner">
+            <div class="d-block text-center pb-3 heading">Order Summary</div>
+            <div class="d-block w-100 order-summary-box">
+                <div class="d-block w-100 text-box">
+                    <div class="d-inline-block align-top w-50 text">
+                        <strong>India</strong>
+                        <p>7 Shares Sheep</p>
+                        <p>Large</p>
+                    </div>
+                    <div class="d-inline-block align-top w-50 text-right text">
+                        <strong>£100.00</strong>
+                    </div>
+                </div>
+                <div class="d-block w-100 text-box">
+                    <div class="d-inline-block align-top w-50 text">
+                        <strong>Gift Aid</strong>
+                    </div>
+                    <div class="d-inline-block align-top w-50 text-right text">
+                        <strong>£25.00</strong>
+                    </div>
+                </div>
+                <div class="d-block w-100 text-box">
+                    <div class="d-inline-block align-top w-50 text">
+                        <strong>Service Fee</strong>
+                    </div>
+                    <div class="d-inline-block align-top w-50 text-right text">
+                        <strong>£1.79</strong>
+                    </div>
+                </div>
+                <div class="d-block w-100 total-amount">
+                    <div class="d-inline-block align-top w-50 text">
+                        <strong>Total Amount</strong>
+                    </div>
+                    <div class="d-inline-block align-top w-50 text-right text">
+                        <strong>£126.79</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-block w-100 py-4 py-md-5 payment-container">
+        <div class="mx-auto payment-inner">
+            <div class="d-block text-center pb-3 heading">Payment</div>
+            <div class="payment-buttons">
+                <a class="btn btn-block btn-pay" routerLink="/thankyou">
+                    <i class="fab fa-apple"></i>
+                    Pay
+                </a>
+                <a class="btn btn-block btn-pay by-card" routerLink="/thankyou">
+                    <i class="fas fa-lock"></i>
+                    Pay By Card
+                </a>
+            </div>
+            <div class="payment-text text-center">
+                By placing your order you agree to Qurbani Giving’s <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</div>
+

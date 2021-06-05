@@ -1,0 +1,61 @@
+<div class="checkout-accordion">
+    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="toggle-1">
+        <ngb-panel id="toggle-1">
+            <ng-template ngbPanelHeader>
+                <div class="d-inline-block w-75 align-top">
+                    <span class="d-block">Help Us Stay Free</span>
+                    <p class="d-block">Keep Qurbani Giving free for charities</p>
+                </div>
+                <div class="d-inline-block w-25 align-top">
+                    <button ngbPanelToggle class="btn"></button>
+                </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <div class="section">
+                    <p>Help charities raise more.</p>
+                    <p>Muslim Aid wasn’t charged a setup fee or donation charges for using this platform. Adding just £0.60 means Qurbani Giving can continue to provide more free services.</p>
+                    <div class="d-flex w-100 text-center justify-content-start prices-box">
+                        <div class="d-flex align-items-center justify-content-center mx-2 price" *ngFor="let priceContent of priceContent; let i = index" [class.active]="selectedItem == i" (click)="selectedItem=i">
+                            {{priceContent.price}}
+                        </div>
+                    </div>
+                    <p>If £0.60 is too much, please consider contributing a smaller amount.</p>
+                </div>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel id="toggle-2">
+            <ng-template ngbPanelHeader>
+                <div class="d-inline-block w-75 align-top">
+                    <span class="d-block">I would like to hear from Qurbani Giving</span>
+                </div>
+                <div class="d-inline-block w-25 align-top">
+                    <div class="d-block onoffswitch-inner" [ngClass]="toggle2 ? 'active' : ''" (click)="clicktoggle2()">
+                        <div class="position-absolute w-100 h-100" (click)="acc.toggle('toggle-2')"></div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <div class="section">
+                    <p>Stay posted on future causes you love.</p>
+                </div>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel id="toggle-3">
+            <ng-template ngbPanelHeader>
+                <div class="d-inline-block w-75 align-top">
+                    <span class="d-block">I would like to hear from Muslim Aid</span>
+                </div>
+                <div class="d-inline-block w-25 align-top">
+                    <div class="d-block onoffswitch-inner" [ngClass]="toggle3 ? 'active' : ''" (click)="clicktoggle3()">
+                        <div class="position-absolute w-100 h-100" (click)="acc.toggle('toggle-3')"></div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <div class="section">
+                    <p>I would like to hear from Muslim Aid</p>
+                </div>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
